@@ -1,11 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "terraform-backend-webserver"
-    key = "terraform-backend-webserver"
-    region = "us-east-2"
-  }
-}
-
 data "aws_availability_zones" "available" {
   state = "available"
 }
